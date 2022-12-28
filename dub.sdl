@@ -11,7 +11,7 @@ dependency "jar" version="~>0.1.0"
 dependency "witchcraft" version="~>0.1.9"
 dependency "colorize" version="~>1.0.5"
 lflags "-lglew" "-lglfw" "/System/Library/Frameworks/OpenGL.framework/OpenGL" platform="osx"
-lflags "WinMM.lib" "OLDNAMES.lib" "MSVCRT.lib" "raylib.lib" "$PACKAGE_DIR/*.lib $PACKAGE_DIR/glfw3_mt.lib" "user32.lib" "gdi32.lib" platform="windows"
+lflags "WinMM.lib" "OLDNAMES.lib" "MSVCRT.lib" "raylib.lib" "$PACKAGE_DIR\\*.lib" "$PACKAGE_DIR\\glfw3_mt.lib" "user32.lib" "gdi32.lib" platform="windows"
 libs "raylib"
 configuration "lib-standard" {
 	dependency "dlib" version="~>0.19.1"
